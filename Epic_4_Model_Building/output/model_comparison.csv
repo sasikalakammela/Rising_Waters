@@ -1,0 +1,4 @@
+Model,Accuracy
+Decision Tree,1.0
+Random Forest,1.0
+KNN,0.9130434782608695

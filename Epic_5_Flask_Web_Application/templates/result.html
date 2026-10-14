@@ -1,0 +1,39 @@
+<<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌊 Prediction Result</h1>
+
+    {% if status == "flood" %}
+
+    <div class="result danger">
+        ⚠️ HIGH FLOOD RISK
+        <br><br>
+        {{ prediction }}
+    </div>
+
+    {% else %}
+
+    <div class="result success">
+        ✅ LOW FLOOD RISK
+        <br><br>
+        {{ prediction }}
+    </div>
+
+    {% endif %}
+
+    <a href="/">🔄 Predict Again</a>
+
+</div>
+
+</body>
+
+</html>
